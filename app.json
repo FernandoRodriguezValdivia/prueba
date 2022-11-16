@@ -2,6 +2,7 @@
   "expo": {
     "name": "AuthPhone",
     "slug": "AuthPhone",
+    "plugins": ["@react-native-firebase/app", "@react-native-firebase/auth"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,13 +22,20 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.fernando04.AuthPhone"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "42833a50-2ebe-43f1-b694-b090e08f943e"
+      }
     }
   }
 }
